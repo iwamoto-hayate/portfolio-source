@@ -1,0 +1,32 @@
+// $pattern: (
+//   "up": translateY(30px),
+//   "down": translateY(-30px),
+//   "left": translateX(40px),
+//   "right": translateX(-40px)
+// );
+
+// @each $key, $value in $pattern {
+//   .fadeIn.#{$key} {
+//     & .fade-item {
+//       transform: $value;
+//     }
+//   }
+// }
+
+// .fadeIn {
+//   & .fade-item {
+//     transition: all .6s;
+//     opacity: 0;
+//   }
+//   &.show {
+//     & .fade-item {
+//       opacity: 1;
+//       transform: none;
+//       @for $i from 1 through 60 {
+//         &:nth-child(#{$i}) {
+//           transition-delay: $i * .2s;
+//         }
+//       }
+//     }
+//   }
+// }

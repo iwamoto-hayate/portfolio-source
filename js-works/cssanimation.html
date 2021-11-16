@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript＆jQuery作品 | CSSAnimationでいろいろつくる</title>
+  <link rel="stylesheet" href="./styles/vendors/destyle.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="./scripts/vendors/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <nav class="header-nav">
+        <ul class="header-menu">
+          <li class="header-menu__item"><a href="./index.html">About</a></li>
+          <li class="header-menu__item drawer-menu click"><a href="./jquery.html">jQuery</a>
+            <ul class="drawer-list click">
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+            </ul>
+          </li>
+          <li class="header-menu__item drawer-menu hover"><a href="./javascript.html">JavaScript</a>
+            <ul class="drawer-list hover">
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+            </ul>
+          </li>
+          <li class="header-menu__item drawer-menu hover active"><a href="./cssanimation.html">CSS Animation</a>
+            <ul class="drawer-list hover">
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+            </ul>
+          </li>
+          <!-- <li class="header-menu__item"><a href="#">JavaScript</a></li> -->
+        </ul>
+      </nav>
+  </header>
+  <main id="main">
+    <div id="sec-01" class="top">
+      <div class="container">
+        <div class="top-textarea">
+          <div class="top-catch">
+            <span>CSSAnimationで</span><br>
+            <span>作りました。</span>
+          </div>
+          <div class="top-text">
+            <p>CSSで作れるものをまとめました。</p>
+            <p>分からないこところはサイトや参考書を確認して、一つ一つの動きを理解しながらつくることで、アウトプットするとともに、ソースを使用できるようにしています。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sec-area">
+      <div class="container">
+        <div class="sec-title">
+          <h2>Button Hover Animations</h2>
+        </div>
+          <a class="button button-cover left">
+            <span class="button-text">左から</span>
+          </a>
+          <a class="button button-cover right">
+            <span class="button-text">右から</span>
+          </a>
+          <a class="button button-cover down">
+            <span class="button-text">上から</span>
+          </a>
+          <a class="button button-cover up">
+            <span class="button-text">下から</span>
+          </a>
+          <a class="button button-fade-color">
+            <span class="button-text">フワッと</span>
+          </a>
+          <a class="btn button-shadow">
+            <span class="button-text">シャドウ</span>
+          </a>
+          <a class="btn button-shadow-in">
+            <span class="button-text">中にも</span>
+          </a>
+          <a class="button-form-change">
+            <span class="button-text">形を変える</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  <div id="pagetop-btn"><a href="#">Topへ</a></div>
+  <script src="./scripts/main.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright"><small>&copy; 2021 Iwamoto Hayate</small></p>
+    </div>
+  </footer>
+</body>
+</html>

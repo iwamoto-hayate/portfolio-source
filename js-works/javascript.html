@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript＆jQuery作品 | JavaScriptでいろいろつくる</title>
+  <link rel="stylesheet" href="./styles/vendors/destyle.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="./scripts/vendors/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <nav class="header-nav">
+        <ul class="header-menu">
+          <li class="header-menu__item"><a href="./index.html">About</a></li>
+          <li class="header-menu__item drawer-menu click"><a href="./jquery.html">jQuery</a>
+            <ul class="drawer-list click">
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+            </ul>
+          </li>
+          <li class="header-menu__item drawer-menu hover active"><a href="./javascript.html">JavaScript</a>
+            <ul class="drawer-list hover">
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+            </ul>
+          </li>
+          <li class="header-menu__item drawer-menu hover"><a href="./cssanimation.html">CSS Animation</a>
+            <ul class="drawer-list hover">
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+              <li class="drawer-item"><a href="#">dummy</a></li>
+            </ul>
+          </li>
+          <!-- <li class="header-menu__item"><a href="#">JavaScript</a></li> -->
+        </ul>
+      </nav>
+  </header>
+  <main id="main">
+    <div id="sec-01" class="top">
+      <div class="container">
+        <div class="top-textarea">
+          <div class="top-catch">
+            <span>JavaScriptで</span><br>
+            <span>作りました。</span>
+          </div>
+          <div class="top-text">
+            <p>jQueryで作れるものをまとめました。</p>
+            <p>分からないこところはサイトや参考書を確認して、一つ一つの動きを理解しながらつくることで、アウトプットするとともに、ソースを使用できるようにしています。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sec-area">
+      <div class="container">
+        <div class="sec-title">
+          <h2>FADE IN</h2>
+        </div>
+        <div class="fade-trigger_btn btn">
+          クリックでフェードイン/アウト
+        </div>
+        <div class="fade-container">
+          <div class="fade-item right">
+            <div class="block">1</div>
+          </div>
+          <div class="fade-item down">
+            <div class="block">2</div>
+          </div>
+          <div class="fade-item up">
+            <div class="block">3</div>
+          </div>
+          <div class="fade-item left">
+            <div class="block">4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sec-area">
+      <div class="container">
+        <div class="sec-title">
+          <h2>COVER SLIDE</h2>
+        </div>
+        <div class="coverslide-trigger_btn btn">
+          クリックでカバースライド
+        </div>
+        <div class="coverslide-container">
+          <div class="coverslide-item coverslide-item_01">
+            <img src="./images/test.jpg" alt="">
+          </div>
+          <div class="coverslide-item coverslide-item_02">
+            <img src="./images/test.jpg" alt="">
+          </div>
+          <div class="coverslide-item coverslide-item_03">
+            <img src="./images/test.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sec-area">
+      <div class="container">
+        <div class="sec-title">
+          <h2>Text Animations</h2>
+        </div>
+        <div class="textanimation-trigger_btn btn">
+          クリックでテキストアニメーション
+        </div>
+        <div class="animate-title">
+          <span class="char">T</span>
+          <span class="char">E</span>
+          <span class="char">X</span>
+          <span class="char">T</span>
+          <span class="char">&nbsp;</span>
+          <span class="char">A</span>
+          <span class="char">N</span>
+          <span class="char">I</span>
+          <span class="char">M</span>
+          <span class="char">A</span>
+          <span class="char">T</span>
+          <span class="char">I</span>
+          <span class="char">O</span>
+          <span class="char">N</span>
+        </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="pagetop-btn"><a href="#">Topへ</a></div>
+  <script src="./scripts/main.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright"><small>&copy; 2021 Iwamoto Hayate</small></p>
+    </div>
+  </footer>
+</body>
+</html>

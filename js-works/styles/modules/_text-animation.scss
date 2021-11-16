@@ -1,0 +1,40 @@
+
+.animate-title {
+  display: block;
+  margin: 0 auto;
+  // color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 5rem;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+
+  &.show {
+    & .char {
+      display: inline-block;
+      animation-name: kf-animation-chars;
+      animation-duration: 0.5s;
+      animation-timing-function: cubic-bezier(0, 0, 0.79, 0.38);
+      animation-fill-mode: both;
+      @for $i from 1 through 60 {
+        &:nth-child(#{$i}) {
+          animation-delay: $i * 0.05s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes kf-animation-chars {
+  0% {
+    opacity: 0;
+    // transform: ;
+    transform: translateY(-50%) rotate(-15deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}

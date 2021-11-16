@@ -1,0 +1,29 @@
+/* ================== drawer-menu ================== */
+.drawer {
+  &-menu {
+    position: relative;
+  }
+  &-list {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    list-style: none;
+    width: 100%;
+    z-index: 1001;
+  }
+  &-item {
+    display: block;
+    padding: 12px;
+    padding: 30px;
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+    text-align: center;
+    color: #000;
+    line-height: 1.5rem;
+    // opacity: 1;
+    transition: background-color .3s;
+    &:hover {
+      background-color: rgb(143, 143, 143);
+    }
+  }
+}

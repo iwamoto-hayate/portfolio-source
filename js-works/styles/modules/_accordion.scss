@@ -1,0 +1,43 @@
+.accordion {
+  &-area {
+    padding: 30px 60px;
+    margin-bottom: 100px;
+  }
+  &-li {
+    cursor: pointer;
+    padding: 1em;
+    border-top: 1px solid rgb(92, 92, 92);
+    &:last-child {
+      border-bottom: 1px solid rgb(92, 92, 92);
+    }
+  }
+  &-title {
+    font-size: 18px;
+    position: relative;
+    font-weight: 600;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 1em;
+      height: 1em;
+      display: block;
+      background-image: url(../images/right-icon.png);
+      background-size: contain;
+      background-position: center center;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      transition: transform 0.3s;
+    }
+    &.open {
+      &::after {
+        transform: rotate(90deg);
+        transform-origin: center center;
+      }
+    }
+  }
+  &-box {
+    display: none;
+    margin-top: 1em;
+  }
+}

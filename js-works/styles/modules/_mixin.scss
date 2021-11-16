@@ -1,0 +1,32 @@
+@mixin radius($size) {
+	@include border-radius($size + px);
+}
+
+
+@mixin box($type: border-box) {
+	@include box-sizing(#{$type});
+}
+
+
+@mixin fz($size: 14) {
+	font-size: $size + px;
+	font-size: ($size / 10)  + rem;
+}
+
+
+// マップ型変数の定義
+$breakpoints: (
+  // key : value,
+'sp' :'screen and (max-width: 767px)',
+'tb' :'screen and (min-width: 768px) and (max-width: 959px)',
+'pc' :'screen and (min-width: 960px)'
+) !default;
+
+
+// メディアクエリ用のmixin定義
+@mixin mq($breakpoint: sp) {
+  // map-get(マップ型変数,キー)値の取得
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}

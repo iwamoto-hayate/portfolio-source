@@ -1,0 +1,134 @@
+.btn {
+  position: relative;
+  display: block;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 6em;
+  padding: 1em 0;
+  background-color: $cBlack;
+  color: $cWhite;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.button {
+  position: relative;
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1.2em 0;
+  text-align: center;
+  border-radius: 6em;
+  border: none;
+  z-index: 2;
+  outline: none;
+  color: #fff;
+  overflow: hidden;
+  margin-bottom: 30px;
+  cursor: pointer;
+  // &:last-child {
+    //   margin-bottom: 0;
+    // }
+  &-text {
+    position: inherit;
+    z-index: 10;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+  &::after,
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+$cover-slide-left: translateX(-100%);
+$cover-slide-right: translateX(100%);
+$cover-slide-top: translateY(-100%);
+$cover-slide-bottom: translateY(100%);
+.button-cover {
+  &::before {
+    background-color: #000;
+  }
+  &::after {
+    background: linear-gradient(135deg, #0470dc, #13f1fc);
+    transition: transform 0.6s ease-in;
+  }
+  &.left {
+    &::after {
+      transform: $cover-slide-left;
+    }
+  }
+  &.right {
+    &::after {
+      transform: $cover-slide-right;
+    }
+  }
+  &.down {
+    &::after {
+      transform: $cover-slide-top;
+    }
+  }
+  &.up {
+    &::after {
+      transform: $cover-slide-bottom;
+    }
+  }
+  &:hover {
+    &::after {
+      transform: none;
+    }
+  }
+}
+
+.button-fade-color {
+  background: #000;
+  &::after {
+    background: linear-gradient(135deg, #0470dc, #13f1fc);
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.button-shadow {
+  transition: box-shadow 0.3s;
+  &:hover {
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.5);
+  }
+}
+
+.button-shadow-in {
+  transition: box-shadow 0.3s;
+  &:hover {
+    box-shadow: inset 0 0 10px 3px rgba(255, 255, 255, 0.4);
+  }
+}
+
+
+.button-form-change {
+  @extend .btn;
+  border-radius: 0;
+  transition: border-radius 0.3s ease-in-out;
+
+  &:hover {
+    border-radius: 6em;
+  }
+}
+
+
+
