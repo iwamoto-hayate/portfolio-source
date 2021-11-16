@@ -1,0 +1,53 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+/**********
+共通
+**********/ 
+
+
+
+
+
+
+
+/**********
+section top
+**********/ 
+.top {
+  // width: 100%;
+  // height: calc(100vh - 80px);
+  // background: rgb(184, 184, 184);
+  border-radius: 30px;
+}
+
+
+/**********
+section info
+**********/
+.info {
+  &-list {
+    &_item {
+      margin-bottom: 10px;
+      .date {
+        margin-right: 40px;
+      }
+      .category {
+        margin-right: 40px;
+        padding: 8px 10px;
+        font-size: 12px;
+      }
+      .info-read {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/**********
+mobile-menu
+**********/ 
+

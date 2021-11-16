@@ -1,0 +1,23 @@
+@import "modules/variables";
+@import "modules/mixin";
+@import "modules/ham-menu";
+//以下modulesファイルの読み込み
+
+@import "breakpoints/base";
+
+// breakpointの確認
+
+@media (min-width: 560px) {
+  @import "breakpoints/560up";
+}
+@media (min-width: 600px) {
+  @import "breakpoints/600up";
+}
+
+@media (min-width: 960px) {
+  @import "breakpoints/960up";
+}
+
+@media (min-width: 1320px) {
+  @import "breakpoints/1320up";
+}

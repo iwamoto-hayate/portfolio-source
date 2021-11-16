@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'tns7sts',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+  <link rel="stylesheet" href="./styles/vendors/destyle.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./scripts/libs/jquery-3.6.0.min.js"></script>
+  <title>step mart</title>
+</head>
+
+<body>
+  <div class="bg-dark">
+    <div class="wrapper">
+      <div id="header-ham">
+        <div class="header">
+          <div class="header-logo">
+            <!-- <img src="./images/logo.svg" alt="step mart ロゴ"> -->
+          </div>
+          <div class="ham-menu_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="ham-menu">
+          <ul class="ham-menu-list">
+            <li class="ham-menu-list_item">
+              <a href="">お知らせ</a>
+            </li>
+            <li class="ham-menu-list_item">
+              <a href="">stepmartについて</a>
+            </li>
+            <li class="ham-menu-list_item">
+              <a href="">商品紹介</a>
+            </li>
+            <li class="ham-menu-list_item">
+              <a href="">レシピ</a>
+            </li>
+            <li class="ham-menu-list_item">
+              <a href="">企業情報</a>
+            </li>
+            <li class="ham-menu-list_item">
+              <a href="">採用情報</a>
+            </li>
+            <li class="ham-menu-list_item">
+              <a href="">店舗一覧</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="side-menu">
+        <header class="header">
+          <div class="header-innner">
+            <div class="header-logo">
+              <!-- <img src="./images/logo.svg" alt=""> -->
+            </div>
+            <ul class="header-menu">
+              <li class="header-menu_item">
+                <a href="" class="btn btn-border">お知らせ</a>
+              </li>
+              <li class="header-menu_item">
+                <a href="" class="btn btn-border">stepmartについて</a>
+              </li>
+              <li class="header-menu_item">
+                <a href="" class="btn btn-border">商品紹介</a>
+              </li>
+              <li class="header-menu_item">
+                <a href="" class="btn btn-border">レシピ</a>
+              </li>
+              <li class="header-menu_item">
+                <a href="" class="btn btn-border">企業情報</a>
+              </li>
+              <li class="header-menu_item">
+                <a href="" class="btn btn-border">採用情報</a>
+              </li>
+              <li class="header-menu_item">
+                <a href="" class="btn btn-border">店舗一覧</a>
+              </li>
+              <li>
+                <div class="border-line">
+                </div>
+              </li>
+              <li class="header-menu_item">
+                <a href="" class="btn btn-border">お問合せ</a>
+              </li>
+            </ul>
+            <div class="sns-link-container">
+              <a class="instagram" href=""></a>
+              <a class="facebook" href=""></a>
+            </div>
+            <div class="address">
+                <p>株式会社 step mart</p>
+                <p>神奈川県横浜市横浜区1-1</p>
+                <p>Tel 000-000-0000</p>
+              
+            </div>
+          </div>
+        </header>
+      </div>
+      <main class="main">
+        <section class="sec top">
+          <div class="top-bg">
+            <img src="./images/main_v_01.jpg">
+            <div class="scroll-bar">
+              <p>scroll</p>
+              <span></span>
+            </div>
+          </div>
+        </section>
+        <section class="sec info">
+          <h2 class="main-title">
+            <span class="border">お知らせ</span>
+          </h2>
+          <ul class="info-list">
+            <li class="info-list_item">
+              <a href="">
+                <span class="date">2021.09.01</span>
+                <span class="category">企業情報</span>
+                <span class="info-read">企業情報を掲載しました</span>
+              </a>
+            </li>
+            <li class="info-list_item">
+              <a href="">
+                <span class="date">2021.09.01</span>
+                <span class="category">企業情報</span>
+                <span class="info-read">企業情報を掲載しました</span>
+              </a>
+            </li>
+            <li class="info-list_item">
+              <a href="">
+                <span class="date">2021.09.01</span>
+                <span class="category">企業情報</span>
+                <span class="info-read">企業情報を掲載しました</span>
+              </a>
+            </li>
+          </ul>
+          <a href="" class="link-view-more">お知らせ一覧</a>
+        </section>
+        <section class="sec about">
+          <h2 class="main-title">
+            <span class="border">step martについて</span>
+          </h2>
+          <div class="about-catch-pc">
+            <p>地域に寄り添った、みんなが笑顔になれる<br>
+              スーパーマーケットを目指して、<br>
+              一歩一歩、地域の皆様と歩んでいきたい。
+            </p>
+            <div class="triangle triangle-top-right"></div>
+            <div class="triangle triangle-top-left"></div>
+            <div class="triangle triangle-bottom-right"></div>
+            <div class="triangle triangle-bottom-left"></div>
+          </div>
+          <div class="about-catch-mobile">
+            <p>地域に寄り添った、<br>
+              みんなが笑顔になれる<br>
+              スーパーマーケットを目指して、<br>
+              一歩一歩、<br>
+              地域の皆様と歩んでいきたい。
+            </p>
+            <div class="triangle triangle-top-right"></div>
+            <div class="triangle triangle-top-left"></div>
+            <div class="triangle triangle-bottom-right"></div>
+            <div class="triangle triangle-bottom-left"></div>
+          </div>
+          <p class="about-catch-mobile">そんな思いから<br>
+            stepmartは生まれました。
+          </p>
+          <p class="about-catch-pc">そんな思いから<br>
+            stepmartは生まれました。
+          </p>
+          <div class="about-textarea">
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+          <!-- <div class="bg-circle bg-circle-yellow"></div>
+          <div class="bg-circle bg-circle-red"></div> -->
+        </section>
+        <section class="sec introduction">
+          <h2 class="main-title">
+            <span class="border">商品紹介</span>
+          </h2>
+          <div class="card-container">
+            <div class="card-item">
+              <div class="card-item-img">
+                <img src="./images/product_01.jpg" alt="商品1">
+              </div>
+              <div class="card-item-dark">
+                <div class="card-item-disc">
+                  <p class="card-item-catch">
+                    キャッチコピーが入ります。
+                  </p>
+                  <p class="card-item-title">
+                    商品名が入ります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-item">
+              <div class="card-item-img">
+                <img src="./images/product_01.jpg" alt="商品1">
+              </div>
+              <div class="card-item-dark">
+                <div class="card-item-disc">
+                  <p class="card-item-catch">
+                    キャッチコピーが入ります。
+                  </p>
+                  <p class="card-item-title">
+                    商品名が入ります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-item">
+              <div class="card-item-img">
+                <img src="./images/product_01.jpg" alt="商品1">
+              </div>
+              <div class="card-item-dark">
+                <div class="card-item-disc">
+                  <p class="card-item-catch">
+                    キャッチコピーが入ります。
+                  </p>
+                  <p class="card-item-title">
+                    商品名が入ります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-item">
+              <div class="card-item-img">
+                <img src="./images/product_01.jpg" alt="商品1">
+              </div>
+              <div class="card-item-dark">
+                <div class="card-item-disc">
+                  <p class="card-item-catch">
+                    キャッチコピーが入ります。
+                  </p>
+                  <p class="card-item-title">
+                    商品名が入ります。
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <a href="" class="link-view-more">もっと見る</a>
+        </section>
+        <section class="recipe sec">
+          <h2 class="main-title">
+            <span class="border">レシピ集</span>
+          </h2>
+          <div class="card-container">
+            <div class="card-item">
+              <div class="card-item-img">
+                <img src="./images/recipe_01.jpg" alt="煮込みハンバーグ">
+              </div>
+              <div class="card-item-dark">
+                <div class="card-item-disc">
+                  <p class="card-item-catch">
+                    子供も大喜び！
+                  </p>
+                  <p class="card-item-title">
+                    絶品煮込みハンバーグ
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-item">
+              <div class="card-item-img">
+                <img src="./images/recipe_02.jpg" alt="煮込みハンバーグ">
+              </div>
+              <div class="card-item-dark">
+                <div class="card-item-disc">
+                  <p class="card-item-catch">
+                    子供も大喜び！
+                  </p>
+                  <p class="card-item-title">
+                    絶品煮込みハンバーグ
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-item mb-none">
+              <div class="card-item-img">
+                <img src="./images/recipe_02.jpg" alt="煮込みハンバーグ">
+              </div>
+              <div class="card-item-dark">
+                <div class="card-item-disc">
+                  <p class="card-item-catch">
+                    子供も大喜び！
+                  </p>
+                  <p class="card-item-title">
+                    絶品煮込みハンバーグ
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card-item mb-none">
+              <div class="card-item-img">
+                <img src="./images/recipe_01.jpg" alt="煮込みハンバーグ">
+              </div>
+              <div class="card-item-dark">
+                <div class="card-item-disc">
+                  <p class="card-item-catch">
+                    子供も大喜び！
+                  </p>
+                  <p class="card-item-title">
+                    絶品煮込みハンバーグ
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="" class="link-view-more">もっと見る</a>
+        </section>
+        <section class="shop sec">
+          <h2 class="main-title">
+            <span class="border">店舗一覧</span>
+          </h2>
+          <ul class="shop-list">
+            <li class="shop-list_item"><a href="#">横浜駅前店</a></li>
+            <li class="shop-list_item"><a href="#">戸塚店</a></li>
+            <li class="shop-list_item"><a href="#">鶴見店</a></li>
+            <li class="shop-list_item"><a href="#">みなとみらい店</a></li>
+            <li class="shop-list_item"><a href="#">保土ヶ谷店</a></li>
+            <li class="shop-list_item"><a href="#">桜田町店</a></li>
+          </ul>
+          <a href="" class="link-view-more">詳細はこちら</a>
+        </section>
+        <section class="company sec">
+          <h2 class="main-title">
+            <span class="border">会社情報</span>
+          </h2>
+          <div class="link-img">
+            <img src="./images/company.jpg" alt="会社情報">
+          </div>
+        </section>
+        <section class="recruit sec">
+          <h2 class="main-title">
+            <span class="border">採用情報</span>
+          </h2>
+          <div class="link-img">
+            <img src="./images/recruit.jpg" alt="採用情報">
+          </div>
+        </section>
+        <section class="contact sec">
+          <h2 class="main-title">
+            <span class="border">ご要望・お問合せ</span>
+          </h2>
+          <div class="link-img">
+            <img src="./images/contact.jpg" alt="ご要望・お問合せ">
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer id="footer">
+      <div class="footer-inner">
+        <small>&copy;2021 stepmart</small>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="./scripts/main.js"></script>
+
+</html>

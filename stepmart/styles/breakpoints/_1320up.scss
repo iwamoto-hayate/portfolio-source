@@ -1,0 +1,77 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+
+.wrapper {
+  margin: 0 40px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+/**********
+header
+**********/ 
+.header {
+  height: auto;
+  // position: none;
+  height: calc(100vh - 100px);
+  max-width: 310px;
+  width: 100%;
+  position: fixed;
+  top: 60px;
+  right: 40px;
+  overflow: scroll;
+  z-index: inherit;
+  // margin-left: 60px;
+  display: block;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  &-logo {
+    margin-bottom: 40px;
+  }
+}
+
+#side-menu {
+  display: block;
+  // & > .header {
+  //   position: sticky !important;
+  //   top: 30px;
+  // }
+}
+
+#header-ham {
+  display: none;
+}
+
+.top {
+  padding-left: 30px;
+  margin-top: 0;
+  & .scroll-bar {
+    // bottom: 150px;
+    bottom: 200px;
+      left: 0px;
+    & span {
+      width: 120px;
+      height: 2px;
+    }
+    & p {
+      font-size: 13px;
+      }
+  }
+}
+
+/**********
+footer
+**********/
+#footer {
+  text-align: right;
+  padding: 30px 40px 20px;
+  font-size: 12px;
+}

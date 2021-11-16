@@ -1,0 +1,36 @@
+
+/**********
+card style
+**********/
+// .header {
+//   &-logo {
+//     width: 100%;
+//   }
+// }
+// .top {
+//   margin-top: 120px;
+// }
+.card {
+  &-container {
+    flex-direction: row;
+  }
+  &-item {
+    position: relative;
+    width: calc((100% - 30px)/2);
+    margin-bottom: 30px;
+    &-dark {
+      padding: 30px 20px 20px;
+    }
+    &-disc {
+      border-left: 7px solid #FF0000;
+      padding-left: 12px;
+    }
+    &-catch {
+      font-size: 16px;
+      margin-bottom: 12px; 
+    }
+    &-title {
+      font-size: 22px;
+    }
+  }
+}

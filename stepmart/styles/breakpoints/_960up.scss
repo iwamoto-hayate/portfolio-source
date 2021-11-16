@@ -1,0 +1,51 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.main-title {
+  font-size: 40px;
+}
+
+.sec {
+  margin-bottom: 140px;
+}
+
+.link-view-more {
+  margin-top: 30px;
+}
+
+/**********
+header
+**********/ 
+#header-mobile {
+  display: none;
+}
+
+.main {
+  // width: 64.2%;
+  width: 100%;
+}
+
+/**********
+section about
+**********/
+.about {
+  &-catch-pc {
+    display: block;
+    
+  }
+  &-catch-mobile {
+display: none;
+  }
+}
+.shop {
+  &-list {
+    justify-content: center;
+    &_item {
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+}
