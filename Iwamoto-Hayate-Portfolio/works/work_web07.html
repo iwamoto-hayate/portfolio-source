@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iwamoto Hayate portfolio| Works | stepmart</title>
+  <link rel=”icon” href=“../images/favicon.ico”>
+  <!-- リセットCSS -->
+  <link rel="stylesheet" href="../styles/vendors/destyle.css">
+  <!-- Bootstrap gridのみ -->
+  <link rel="stylesheet" href="../styles/vendors/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <!-- AdobeFont読み込み -->
+  <link rel="stylesheet" href="https://use.typekit.net/jur3ffv.css">
+</head>
+<body>
+  <div class="global-container">
+    <div class="loading">
+      <div class="spinner"><span class="spinner-text bold">Loading...</span></div>
+    </div>
+    <header class="header">
+      <div class="header-inner">
+          <h1 class="header-logo">
+            <a href="../index.html">
+              <img src="../images/logo_header.svg" alt="ロゴ">
+            </a>
+          </h1>
+        <nav class="header-nav">
+          <ul class="header-menu">
+            <li class="header-menu__item bold"><a href="../index.html">Home</a>
+            </li>
+            <li class="header-menu__item bold"><a href="../about.html">About</a>
+            </li>
+            <li class="header-menu__item bold active"><a href="../works.html">Works</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__bg"></div>
+        <div class="mobile-menu__cover"></div>
+        <button class="mobile-menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <p class="medium mobile-menu__text"></p>
+        </button>
+      </div>
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item bold">
+            <a class="mobile-menu__link" href="../index.html">Home</a>
+          </li>
+          <li class="mobile-menu__item bold">
+            <a class="mobile-menu__link" href="../about.html">About</a>
+          </li>
+          <li class="mobile-menu__item bold">
+            <a class="mobile-menu__link active" href="../works.html">Works</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="inner">
+      <section class="works-page">
+        <div class="wrapper">
+          <div class="work-details-container">
+            <div class="work-details-img">
+              <img src="../images/works_web07_top.jpg" alt="JavaScript&jQuery作品">
+            </div>
+            <table class="work-details-table">
+              <tr>
+                <th>作品名</th>
+                <td>stepmartサイト(架空)</td>
+              </tr>
+              <tr>
+                <th>作品データ</th>
+                <td><a href="https://iwamoto-hayate.sakura.ne.jp/stepmart/index.html" target="_blank">作品リンク</a></td>
+              </tr>
+              <tr>
+                <th>制作期間</th>
+                <td>約1ケ月間</td>
+              </tr>
+              <tr>
+                <th>担当作業</th>
+                <td>デザイン、コーディング</td>
+              </tr>
+              <tr>
+                <th>作品説明</th>
+                <td>授業課題で作成しました。<br>
+                レイアウトはメニューがどこにあるかわかるよう、常にサイドに表示するようにしました。色は暖かみのある暖色を使用し、柔らかさと暖かみを意識しました。
+                商品やレシピの部分はカードレイアウトで適度に余白を取り、きちんと情報をを読み取ってももらえるよう文字の背景をダークにするなど工夫しました。コーディングはレスポンシブ対応まで行い、どのデバイスでもきちんと見えるようにしました。
+                </td>
+              </tr>
+              <tr>
+                <th>開発ツール</th>
+                <td>Illustrator,Photoshop,XD,Visual Studio Code</td>
+              </tr>
+              <tr>
+                <th>使用言語</th>
+                <td>HTML,CSS,Sass,jQuery</td>
+              </tr>
+            </table>
+            <button class="btn bold" onclick="location.href='../works.html'">一覧に戻る<span class="btn-arrow"></span></button>
+          </div>
+        </div>
+        <div class="design-comp">
+          <div class="wrapper">
+            <div class="flex-container">
+              <div class="flex-right">
+                <div class="design-comp-img">
+                  <p class="design-comp-text bold">トップページ（PC）</p>
+                  <img src="../images/works_web07_comp01_pc.jpg" alt="トップページ（PC）">
+                </div>
+              </div>
+            
+              <div class="flex-left">
+                <div class="design-comp-img">
+                  <p class="design-comp-text bold">トップページ（SP）</p>
+                  <img src="../images/works_web07_comp02_sp.jpg" alt="トップページ（SP）">
+                </div>
+              </div>
+            </div>
+            <button class="btn bold" onclick="location.href='../works.html'">一覧に戻る<span class="btn-arrow"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-inner">
+        <h1 class="footer-logo">
+          <a href="../index.html">
+            <img src="../images/logo_footer.svg" alt="フッターロゴ">
+          </a>
+        </h1>
+        <nav class="footer-nav">
+          <ul class="footer-menu">
+            <li class="footer-menu__item bold"><a href="../index.html">Home</a>
+            </li>
+            <li class="footer-menu__item bold"><a href="../about.html">About</a>
+            </li>
+            <li class="footer-menu__item bold active"><a href="../works.html">Works</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copyright">&copy; 2021 Iwamoto Hayate Inc.</p>
+    </footer>
+    <div class="pageTopTrigger">
+      <div id="page-top">
+        <a>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="../scripts/vendors/scroll-polyfill.js"></script>
+  <script src="./scripts/vendors/smoothscroll.js"></script>
+  <script src="../scripts/libs/scroll.js"></script>
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

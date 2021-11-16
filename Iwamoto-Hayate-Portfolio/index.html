@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="岩本颯のポートフォリオサイトです。">
+  <meta name="keywords" content="Iwamoto Hayate Portfolio,岩本颯ポートフォリオ">
+  <title>Iwamoto Hayate Portfolio</title>
+  <link rel=”icon” href=“./images/favicon.ico”>
+  <!-- リセットCSS -->
+  <link rel="stylesheet" href="./styles/vendors/destyle.css">
+  <!-- Bootstrap gridのみ -->
+  <link rel="stylesheet" href="./styles/vendors/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- AdobeFont読み込み -->
+  <link rel="stylesheet" href="https://use.typekit.net/jur3ffv.css">
+</head>
+
+<body>
+  <div class="global-container">
+    <div class="loading">
+      <div class="spinner"><span class="spinner-text bold">Loading...</span></div>
+    </div>
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="header-logo">
+          <a href="index.html">
+            <img src="./images/logo_header.svg" alt="ロゴ">
+          </a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-menu">
+            <li class="header-menu__item bold active"><a href="index.html">Home</a>
+            </li>
+            <li class="header-menu__item bold"><a href="about.html">About</a>
+            </li>
+            <li class="header-menu__item bold"><a href="works.html">Works</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__bg"></div>
+        <div class="mobile-menu__cover"></div>
+        <button class="mobile-menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <p class="medium mobile-menu__text"></p>
+        </button>
+      </div>
+      <nav class="mobile-menu">
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item bold">
+            <a class="mobile-menu__link active" href="index.html">Home</a>
+          </li>
+          <li class="mobile-menu__item bold">
+            <a class="mobile-menu__link" href="about.html">About</a>
+          </li>
+          <li class="mobile-menu__item bold">
+            <a class="mobile-menu__link" href="works.html">Works</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="inner">
+      <section class="top fadeIn up">
+        <div class="top-bg">
+          <div class="wrapper">
+            <div class="catch fade-item">
+              <p class="bold"><span>Iwamoto Hayate</span></p>
+              <p class="bold"><span>Portfolio</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about fadeIn up" id="sec-01">
+        <div class="wrapper">
+          <div class="flex-container fade-item">
+            <div class="flex-left">
+              <div class="main-title">
+                <h2 class="main-title-en bold "><span class="text-blue">A</span>bout</h2>
+                <p class="main-title-ja bold ">私について</p>
+              </div>
+              <div class="about-img-sp">
+                <div class="about-profile-img">
+                  <img src="./images/about_profile.jpg" alt="プロフィール画像">
+                </div>
+              </div>
+              <div class="about-text ">
+                <p>
+                  Webサイトを開いた時の感動や面白さに惹かれ、Web制作に興味を持つようになりました。<br>
+                  放課後も自身でデザインとコーディングを楽しく学習し、作品作りに取り組んでいます。<br>
+                </p>
+              </div>
+              <button class="btn bold" onclick="location.href='./about.html'">詳しく見る<span
+                  class="btn-arrow fade-item"></span></button>
+            </div>
+            <div class="flex-right">
+              <div class="about-profile-img">
+                <img src="./images/about_profile.jpg" alt="プロフィール画像">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="works" id="sec-02">
+        <div class="main-title">
+          <h2 class="main-title-en bold"><span class="text-blue">W</span>orks</h2>
+          <p class="main-title-ja bold">私の作品</p>
+        </div>
+        <div class="works-container">
+          <!-- 以下bootstrap grid -->
+          <div class="wrapper">
+            <h3 class="works-title bold title-bar">Web</h3>
+          </div>
+          <div class="card-container fadeIn up">
+            <div class="row fade-item">
+              <div class="card col-12 col-sm-6 col-md-4">
+                <a href="./works/work_web01.html">
+                  <div class="darken">
+                    <div class="card-img darken-img">
+                      <img src="./images/works_web01.jpg" alt="株式会社田中建設架空サイトコーポレートサイト（架空）">
+                    </div>
+                    <div class="darken-text">
+                      <p>詳細を見る</p>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <div class="work-name medium">株式会社田中建設コーポレートサイト（架空）</div>
+                    <div class="category-container">
+                      <div class="category-bar">デザイン</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card col-12 col-sm-6 col-md-4">
+                <a href="./works/work_web02.html">
+                  <div class="darken">
+                    <div class="card-img darken-img">
+                      <img src="./images/works_web02.jpg" alt="ポートフォリオサイト">
+                    </div>
+                    <div class="darken-text">
+                      <p>詳細を見る</p>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <div class="work-name medium">ポートフォリオサイト</div>
+                    <div class="category-container">
+                      <div class="category-bar">デザイン</div>
+                      <div class="category-bar">コーディング</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card col-12 col-sm-6 col-md-4">
+                <a href="./works/work_web03.html">
+                  <div class="darken">
+                    <div class="card-img darken-img">
+                      <img src="./images/works_web03.jpg" alt="ふたば農園架空サイト">
+                    </div>
+                    <div class="darken-text">
+                      <p>詳細を見る</p>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <div class="work-name medium">ふたば農園ブランドサイト(架空)</div>
+                    <div class="category-container">
+                      <div class="category-bar">デザイン</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card col-12 col-sm-6 col-md-4">
+                <a href="./works/work_web04.html">
+                  <div class="darken">
+                    <div class="card-img darken-img">
+                      <img src="./images/works_web04.jpg" alt="鳥羽製茶架空サイト">
+                    </div>
+                    <div class="darken-text">
+                      <p>詳細を見る</p>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <div class="work-name medium">鳥羽製茶サイト(架空)</div>
+                    <div class="category-container">
+                      <div class="category-bar">デザイン</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card col-12 col-sm-6 col-md-4">
+                <a href="./works/work_web05.html">
+                  <div class="darken">
+                    <div class="card-img darken-img">
+                      <img src="./images/works_web05.jpg" alt="cafe ochiai 架空サイト">
+                    </div>
+                    <div class="darken-text">
+                      <p>詳細を見る</p>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <div class="work-name medium">cafe ochiai(架空)</div>
+                    <div class="category-container">
+                      <div class="category-bar">コーディング</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card col-12 col-sm-6 col-md-4">
+                <a href="./works/work_web06.html">
+                  <div class="darken">
+                    <div class="card-img darken-img">
+                      <img src="./images/works_web06.jpg" alt="Javascript&jQuery作品">
+                    </div>
+                    <div class="darken-text">
+                      <p>詳細を見る</p>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <div class="work-name medium">Javascript&jQuery作品</div>
+                    <div class="category-container">
+                      <div class="category-bar">コーディング</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card col-12 col-sm-6 col-md-4">
+                <a href="./works/work_web07.html">
+                  <div class="darken">
+                    <div class="card-img darken-img">
+                      <img src="./images/works_web07.jpg" alt="stepmart">
+                    </div>
+                    <div class="darken-text">
+                      <p>詳細を見る</p>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <div class="work-name medium">step mart(架空)</div>
+                    <div class="category-container">
+                      <div class="category-bar">デザイン</div>
+                      <div class="category-bar">コーディング</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="works-container">
+          <!-- 以下bootstrap grid -->
+          <div class="wrapper">
+            <h3 class="works-title bold title-bar">Others</h3>
+          </div>
+          <div class="card-container fadeIn up">
+            <div class="row fade-item">
+              <div class="card col-12 col-sm-6 col-md-4">
+                <a href="./works/work_other01.html">
+                  <div class="darken">
+                    <div class="card-img darken-img">
+                      <img src="./images/works_others01.jpg" alt="ロゴ作成">
+                    </div>
+                    <div class="darken-text">
+                      <p>詳細を見る</p>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <div class="work-name medium">ロゴ作成</div>
+                    <div class="category-container">
+                      <div class="category-bar">デザイン</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card col-12 col-sm-6 col-md-4">
+                <a href="./works/work_other02.html">
+                  <div class="darken">
+                    <div class="card-img darken-img">
+                      <img src="./images/works_others02.jpg" alt="名刺作成">
+                    </div>
+                    <div class="darken-text">
+                      <p>詳細を見る</p>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <div class="work-name medium">名刺作成</div>
+                    <div class="category-container">
+                      <div class="category-bar">デザイン</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="card col-12 col-sm-6 col-md-4">
+                <a href="./works/work_other03.html">
+                  <div class="darken">
+                    <div class="card-img darken-img">
+                      <img src="./images/works_others03.jpg" alt="雑誌表紙作成">
+                    </div>
+                    <div class="darken-text">
+                      <p>詳細を見る</p>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <div class="work-name medium">雑誌表紙作成</div>
+                    <div class="category-container">
+                      <div class="category-bar">デザイン</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-inner">
+        <h1 class="footer-logo">
+          <a href="index.html">
+            <img src="./images/logo_footer.svg" alt="フッターロゴ">
+          </a>
+        </h1>
+        <nav class="footer-nav">
+          <ul class="footer-menu">
+            <li class="footer-menu__item bold active"><a href="index.html">Home</a>
+            </li>
+            <li class="footer-menu__item bold"><a href="about.html">About</a>
+            </li>
+            <li class="footer-menu__item bold"><a href="works.html">Works</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copyright">&copy; 2021 Iwamoto Hayate Inc.</p>
+    </footer>
+    <div class="pageTopTrigger">
+      <div id="page-top">
+        <a>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="./scripts/vendors/scroll-polyfill.js"></script>
+  <script src="./scripts/vendors/smoothscroll.js"></script>
+  <script src="./scripts/libs/scroll.js"></script>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>

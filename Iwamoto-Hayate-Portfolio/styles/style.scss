@@ -1,0 +1,27 @@
+// 以下modulesファイルの読み込み
+@import './modules/variables';
+@import './modules/mixin';
+
+// 以下breakpointsファイル読み込み
+
+@import './breakpoints/base';
+// 以下メディアクエリ
+@media screen and (min-width: 560px) {
+  @import './breakpoints/560up';
+}
+@media screen and (min-width: 768px) {
+  @import './breakpoints/768up';
+}
+@media screen and (min-width: 960px) {
+  @import './breakpoints/960up';
+};
+@media screen and (min-width: 1200px) {
+  @import './breakpoints/1200up';
+};
+
+
+// その他moduleファイル
+@import './modules/mobile-menu';
+@import './modules/loading';
+@import './modules/fade';
+@import './modules/page-top';

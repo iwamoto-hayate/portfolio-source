@@ -1,0 +1,135 @@
+//------ 共通クラス ---------------------------------------------
+.wrapper {
+  padding: 0 40px;
+}
+
+.flex {
+  &-container {
+    flex-direction: row;
+  }
+  &-left,
+  &-right {
+    width: 48%;
+  }
+}
+
+//------ btn クラス ---------------------------------------------
+.btn {
+  max-width: 300px;
+  margin: 0;
+}
+
+//------ header ---------------------------------------------
+.header {
+  &-inner {
+    padding: 0 40px;
+  }
+}
+
+// ------ top ---------------------------------------------
+.top {
+  &-bg {
+    background-image: url(../images/top_pc.jpg);
+  }
+  .catch-bg {
+    bottom: 60px;
+    width: 178px;
+    height: 178px;
+  }
+  .catch {
+    bottom: 90px;
+    // line-height: 2.2em;
+    // font-size: 24px;
+    // line-height: 60px;
+    // margin-left: 40px;
+  }
+}
+
+// ------ about ---------------------------------------------
+.about {
+  &::before,
+  &::after {
+    max-height: 200px;
+    height: 20%;
+  }
+  &-text {
+    margin-bottom: 56px;
+  }
+  &-img-sp {
+    display: none;
+  }
+  & .flex-right {
+    display: block;
+  }
+  & .main-title {
+    text-align: left;
+    margin-bottom: 64px;
+  }
+}
+
+// ------ works ---------------------------------------------
+.card {
+  &-container {
+    padding: 0 40px;
+  }
+}
+
+// ------ footer ---------------------------------------------
+.footer {
+  &-inner {
+    padding: 0 40px;
+    flex-direction: row;
+    margin-bottom: 80px;
+    align-items: baseline;
+  }
+  &-logo {
+    margin-bottom: 0px;
+  }
+  &-menu {
+    flex-direction: row;
+    &__item {
+      margin-left: 20px;
+      padding: 10px 20px;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+  }
+}
+
+// 以下下層ページ
+// ------ about-page ---------------------------------------------
+.concept {
+  &-text-bg {
+    padding: 64px 56px;
+  }
+}
+
+.profile {
+  &-sec {
+    margin-bottom: 120px;
+  }
+}
+
+.career {
+  &-sec {
+    margin-bottom: 120px;
+  }
+  &-table {
+    & th {
+      width: 15%;
+    }
+    & td {
+      width: 85%;
+    }
+  }
+}
+
+// ------ work-details---------------------------------------------
+
+.design-comp {
+  margin-top: 120px;
+  padding: 120px 0;
+  &-img {
+    width: 90%;
+  }
+}

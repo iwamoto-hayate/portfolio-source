@@ -1,0 +1,268 @@
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  font-weight: 500;
+  // line-height: 26px;
+}
+
+//------ フォントクラス ---------------------------------------------
+.ft-sm {
+  font-size: 12px;
+}
+.ft-rg {
+  font-size: 16px;
+}
+.ft-md {
+  font-size: 24px;
+}
+.ft-lg {
+  font-size: 32px;
+}
+.ft-big {
+  font-size: 64px;
+}
+.ft-bilo {
+  font-family: bilo, sans-serif;
+}
+
+.regular {
+  font-weight: 500;
+}
+.medium {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+
+//------ 下余白クラス ---------------------------------------------
+.mb-sm {
+  margin-bottom: 24px;
+}
+.mb-rg {
+  margin-bottom: 32px;
+}
+.mb-md {
+  margin-bottom: 48px;
+}
+.mb-lg {
+  margin-bottom: 120px;
+}
+
+//------ 下外余白 ---------------------------------------------
+.pb-sm {
+  padding-bottom: 24px;
+}
+.pb-md {
+  padding-bottom: 32px;
+}
+.pb-md {
+  padding-bottom: 56px;
+}
+
+//------ 共通クラス ---------------------------------------------
+.wrapper {
+  max-width: 1200px;
+  padding: 0 100px;
+}
+.inner {
+  margin-top: 100px;
+}
+.main-title {
+  text-align: center;
+  margin-bottom: 100px;
+  &-en {
+    font-size: 64px;
+    line-height: 84px;
+  }
+  &-ja {
+    font-size: 20px;
+  }
+}
+.title-bar {
+  &::before,
+  &::after {
+    width: 40px;
+  }
+}
+//------ header ---------------------------------------------
+.header {
+  &-inner {
+    padding: 25px 40px;
+    max-width: 1280px;
+    margin: auto;
+    align-items: baseline;
+    height: 100px;
+  }
+  &-logo {
+    & img {
+      height: 50px;
+    }
+  }
+  &-nav {
+    display: block;
+  }
+  .mobile-menu__btn {
+    display: none;
+  }
+}
+
+// ------ top ---------------------------------------------
+:root {
+  --catch--font: 48px;
+}
+.top {
+  margin-bottom: 160px;
+  &-bg {
+    height: 650px;
+    // height: calc(100vh - 100px);
+  }
+  .catch-bg {
+    left: 60px;
+    width: 200px;
+    height: 200px;
+  }
+  .catch {
+    bottom: 100px;
+    line-height: 2.1em;
+    
+    // font-size: 36px;
+  
+    // line-height: 64px;
+  }
+}
+
+// ------ about ---------------------------------------------
+
+.about {
+  padding: 200px 0 280px;
+  // &::before, &::after {
+  //   height: 20%;
+  // }
+}
+
+// ------ works ---------------------------------------------
+.works {
+  // margin-bottom: 160px;
+  padding: 160px 0 94px;
+  &-title {
+    // @extend .ft-md;
+    // @extend .mb-rg;
+    // margin-bottom: 56px;
+    font-size: 36px;
+  }
+}
+.card {
+  &-container {
+    max-width: 1200px;
+    padding: 0 100px;
+  }
+}
+.work-name {
+  font-size: 22px;
+}
+
+.category {
+  &-bar {
+    font-size: 15px;
+  }
+}
+
+// ------ footer ---------------------------------------------
+.footer {
+  &-inner {
+    max-width: 1280px;
+    margin: 0 auto 80px auto;
+  }
+  &-logo {
+    & img {
+      height: 36px;
+    }
+  }
+}
+
+// 以下下層ページ
+.page-sec-title {
+  font-size: 36px;
+  margin-bottom: 80px;
+}
+
+// about,works余白設定
+.works {
+  &-page {
+    padding: 64px 0 96px;
+  }
+}
+// ------ about-page ---------------------------------------------
+.profile {
+  &-sec {
+    margin-bottom: 160px;
+    & .flex-right {
+      width: 48%;
+    }
+  }
+}
+.career {
+  &-sec {
+    margin-bottom: 160px;
+  }
+}
+
+.skill {
+  &-sec {
+    margin-bottom: 160px;
+  }
+  // &-card {
+  //   padding: 0 20px;
+  // }
+  &-img {
+    // margin-bottom: 16px;
+    & > img {
+      height: 60px;
+    }
+  }
+  &-name {
+    font-size: 24px;
+    // margin-bottom: 16px;
+  }
+}
+
+.goal {
+  &-sec {
+    padding: 160px 0;
+  }
+  &-text-bg {
+    padding: 80px 64px;
+    width: 60%;
+  }
+}
+
+// ------ work-details---------------------------------------------
+.work-details {
+  &-img {
+    margin-bottom: 56px;
+  }
+  &-table {
+    & th {
+      padding: 15px 0;
+    }
+    & td {
+      padding: 15px 0;
+    }
+  }
+}
+
+.design-comp {
+  margin-top: 160px;
+  padding: 160px 0 ;
+  &-img {
+    width: 90%;
+    margin-bottom: 64px;
+  }
+  
+  &-text {
+    margin-bottom: 12px;
+    font-size: 18px;
+    text-align: center;
+  }
+}

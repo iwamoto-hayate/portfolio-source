@@ -1,0 +1,12 @@
+@mixin radius($size) {
+	@include border-radius($size + px);
+}
+
+@mixin box($type: border-box) {
+	@include box-sizing(#{$type});
+}
+
+@mixin fz($size: 14) {
+	font-size: $size + px;
+	font-size: ($size / 10)  + rem;
+}
