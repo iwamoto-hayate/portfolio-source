@@ -1,0 +1,304 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.font-sm {
+  font-size: 12px;
+}
+.font-md {
+  font-size: 16px;
+}
+.font-lr {
+  font-size: 26px;
+}
+.font-lg {
+  font-size: 40px;
+}
+.mb-sm {
+  margin-bottom: 60px !important;
+}
+.mb-lr {
+  margin-bottom: 80px !important;
+}
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+// .pb-sm {
+//   padding-bottom: 30px !important;
+// }
+// .content-width {
+//   width: 95%;
+// }
+// bace↑↑↑↑↑
+
+// common↓↓↓↓↓
+.logo {
+  font-size: 36px;
+}
+
+.header {
+  &__inner {
+    width: fit-content;
+    top: 60px;
+    left: 40px;
+    transform: translateX(0%);
+    & .mobile-menu__btn {
+      display: none;
+    }
+    .sns-link {
+      display: block;
+    }
+  }
+  .global-nav {
+    font-size: 17px;
+    &__ul {
+      margin-top: 80px;
+      display: block;
+    }
+  }
+}
+
+.wrapper {
+  margin: 0 80px 0 160px;
+}
+
+.footer {
+  padding: 20px 0;
+  & .copy-right {
+    text-align: center;
+  }
+}
+
+.icon-forward {
+  width: 1em;
+  height: 1em;
+  object-fit: contain;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+/////////index.htmlホーム↓↓↓↓↓
+// section共通設定
+.sec {
+  
+  &-container {
+    // width: 48%;
+    margin-bottom: 0 !important;
+  }
+  &-title {
+    &::after {
+      height: 5px;
+    }
+    &__sub {
+      margin: 0 auto 60px;
+    }
+  }
+  &-flex {
+    flex-direction: row;
+    
+  }
+  // &-img {
+  //   overflow: hidden;
+  //   width: 48%;
+  //   & > img {
+  //     width: 100%;
+  //   }
+  // }
+  &-img {
+    & img {
+      height: 600px;
+    }
+  }
+}
+.flex-left {
+  width: 50%;
+}
+.flex-right {
+  width: 44%;
+}
+
+// mainvisual↓↓↓↓↓
+.main-visual {
+  overflow: hidden;
+  // margin: 80px 0 0 160px;
+  margin-top: 80px;
+  padding-left: 160px;
+}
+
+.concept {
+  & .sec {
+    &-textarea {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+// news↓↓↓↓↓
+.news {
+  &-article {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    &__container {
+      margin-left: 30px;
+    }
+    &__date {
+      padding-bottom: 15px;
+    }
+  }
+}
+
+// menu↓↓↓↓↓
+.menu {
+  // menu↓↓↓↓↓
+.menu {
+  &__flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+  }
+  &__img {
+    height: 360px;
+    width: calc(((100% - 40px) / 3));
+      &:nth-child(odd){
+        margin-right: 0px;
+    }
+      &:nth-child(even){
+        margin: 0 20px;
+    }
+  }
+}
+}
+
+.service {
+  & .sec-flex {
+    flex-direction: row-reverse;
+  }
+  & .flex-img {
+    text-align: right;
+  }
+  &-icon {
+    &__container {
+      margin-bottom: 60px;
+    }
+    &__item {
+      margin: 15px;
+    }
+    &__name {
+      font-size: 18px;
+    }
+  }
+}
+
+.access {
+  &-info {
+    &__flex {
+      flex-direction: row;
+      }
+    &__table {
+      width: 44%;
+    }
+  }
+  &-map iframe {
+    height: 600px;
+  }
+}
+
+.contact {
+  &-btn {
+    &__area {
+    margin-bottom: 0 !important;
+    }
+  }
+}
+
+////////menu.htmlメニューページここから↓↓↓↓↓
+.page {
+  &-top {
+    &__bg {
+      width: calc(100% + 80px);
+      right: 0px;
+      margin-top: 60px;
+      height: 150px;
+    }
+    &__title {
+      left: calc( 50% - 40px);
+    }
+  }
+}
+
+.menu-page {
+  & .menu {
+    &-content {
+      width: calc(((100% - 60px) / 3));
+      &:nth-child(odd){
+        margin-right: 0px;
+      }
+      &:nth-child(even){
+        margin: 0 30px;
+      }
+    }
+    &-img {
+      height: 45vh;
+      margin-bottom: 30px;
+    }
+    &-name {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    &-description {
+      margin-bottom: 30px;
+    }
+    &-detail__name {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    &-detail {
+      font-size: 15px;
+      margin-bottom: 30px
+    }
+    &-supply {
+      font-size: 21px;
+    }
+  }
+}
+
+.contact {
+  & .link-contact {
+    &__bg {
+      margin-left: -160px;
+      padding: 100px 80px 100px 160px;
+    }
+    &-btn {
+      &__flex {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        // flex-wrap: wrap;
+        & .btn {
+          width: 31%;
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+}
+////////メニューページここまで↑↑↑↑↑
+
+// form 
+.form {
+  &-item {
+    &_name {
+      font-size: 18px;
+    }
+  }
+
+  .must {
+    font-size: 16px;
+  }
+
+  input[type=submit] {
+    margin-top: 60px;
+  }
+}

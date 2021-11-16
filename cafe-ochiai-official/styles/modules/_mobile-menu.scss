@@ -1,0 +1,111 @@
+$cMenuClose: $cBlack;
+$cMenuOpen: $cBlack;
+
+.mobile-menu {
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 60%;
+
+    & .logo {
+        padding: 0 40px;
+        font-size: 38px;
+    }
+    &__btn {
+        background-color: unset;
+        border: none;
+        outline: none !important;
+        cursor: pointer;
+    
+        & > span {
+            background-color: $cMenuClose;
+            width: 35px;
+            height: 2px;
+            display: block;
+            margin-bottom: 9px;
+            transition: all 0.5s;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__cover {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background-color: $cBrown;
+        visibility: hidden;
+        transition: all .3s;
+        cursor: pointer;
+        z-index: 200;
+    }
+    &__main {
+        display: block;
+        position: relative;
+        margin-top: 60px;
+        z-index: 200;
+    }
+    &__item {
+        margin: 0 auto;
+        width: 7em;
+        list-style: none;
+        display: block;
+        transform: translateX(100%);
+        text-align: left;
+        transition: transform 0.5s, opacity 0.5s;
+        opacity: 0;
+    }
+    &__link {
+        @extend .font-lr;
+        display: block;
+        margin-top: 30px;
+        color: $cBlack;
+        text-decoration: none !important;
+    }
+    &__icon {
+        width: 1em;
+    }
+}
+
+.menu-open {
+    & .mobile-menu {
+        &__cover {
+            width: 60%;
+            visibility: visible;
+        }
+        &__item {
+            transform: none;
+            opacity: 1;
+            @for $i from 1 through 8{
+                &:nth-child(#{$i}) {
+                    transition-delay: $i * 0.07s;
+                }
+            }
+        }
+        &__link {
+            transition: color .3s;
+            &:hover {
+                color: $cWhite;
+                
+            }
+        }
+        &__btn {
+            & > span {
+                background-color: $cMenuOpen;
+                &:nth-child(1) {
+                    // transition-delay: 70ms;
+                    transform: translateY(11px) rotate(135deg);
+                }
+                &:nth-child(2) {
+                    transition-delay: 0s;
+                    transform:  translateX(50%) scaleX(0);
+                }
+                &:nth-child(3) {
+                    transform: translateY(-11px) rotate(-135deg);
+                }
+            }
+        }
+    }
+}
